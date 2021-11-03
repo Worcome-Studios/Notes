@@ -73,6 +73,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Debugger.Designer.vb">
+      <DependentUpon>Debugger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Debugger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -88,13 +100,56 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="WorSupport\AppAbout.designer.vb">
+      <DependentUpon>AppAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorSupport\AppAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorSupport\AppHelper.designer.vb">
+      <DependentUpon>AppHelper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorSupport\AppHelper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorSupport\AppService.vb" />
+    <Compile Include="WorSupport\AppSupport.designer.vb">
+      <DependentUpon>AppSupport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorSupport\AppSupport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorSupport\AppUpdate.designer.vb">
+      <DependentUpon>AppUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorSupport\AppUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Debugger.resx">
+      <DependentUpon>Debugger.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorSupport\AppAbout.resx">
+      <DependentUpon>AppAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorSupport\AppHelper.resx">
+      <DependentUpon>AppHelper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorSupport\AppSupport.resx">
+      <DependentUpon>AppSupport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorSupport\AppUpdate.resx">
+      <DependentUpon>AppUpdate.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -108,6 +163,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Worcome_PNL-Logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
